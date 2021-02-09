@@ -9,7 +9,7 @@ import {
   IonTabs,
 } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
-import { ellipse, square, triangle } from 'ionicons/icons';
+import { ellipse, square, squareSharp, star, triangle } from 'ionicons/icons';
 import Tab1 from './pages/Tab1';
 import Tab2 from './pages/Tab2';
 import Tab3 from './pages/Tab3';
@@ -53,7 +53,7 @@ const App: React.FC = () => (
         </IonRouterOutlet>
         <IonTabBar slot="bottom">
           <IonTabButton tab="tab1" href="/tab1">
-            <IonIcon icon={triangle} />
+            <IonIcon icon={squareSharp} />
             <IonLabel>Tab 1</IonLabel>
           </IonTabButton>
           <IonTabButton tab="tab2" href="/tab2">
@@ -63,6 +63,10 @@ const App: React.FC = () => (
           <IonTabButton tab="tab3" href="/tab3">
             <IonIcon icon={square} />
             <IonLabel>Tab 3</IonLabel>
+          </IonTabButton>
+          <IonTabButton tab="tab4" href="/tab4">
+            <IonIcon icon={star} />
+            <IonLabel>Carl's tab !!!</IonLabel>
           </IonTabButton>
         </IonTabBar>
       </IonTabs>
